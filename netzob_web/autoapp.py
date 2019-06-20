@@ -52,4 +52,4 @@ CONFIG = DevConfig# if get_debug_flag() else ProdConfig
 app = create_app(CONFIG)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
