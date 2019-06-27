@@ -108,10 +108,10 @@ class UDPClient(AbstractChannel):
         """Open the communication channel. If the channel is a client, it starts to connect
         to the specified server.
         """
-
-        if self.isOpen:
-            raise RuntimeError(
-                "The channel is already open, cannot open it again")
+        #print("test" + str(self.isOpen))
+        #if self.isOpen:
+        #    raise RuntimeError(
+        #        "The channel is already open, cannot open it again")
 
         self.__socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         # Reuse the connection
