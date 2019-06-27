@@ -1,0 +1,76 @@
+                                                                                                    
+Ready to read incomming messages                                                                    
+-> Read: CMDidentify#                                                                               
+CMDidentify#                                                                                        
+   Command: CMDidentify                                                                             
+   Arg size: 6                                                                                      
+   Arg content: 1                                                                                   
+<- Send:                                                                                            
+   Return value: 0                                                                                  
+   Size of data buffer: 0                                                                           
+   Data buffer:                                                                                     
+        ""                                                                                          
+                                                                                                    
+-> Read: CMDinfo#                                                                                   
+CMDinfo#                                                                                            
+   Command: CMDinfo                                                                                 
+   Arg size: 0                                                                                      
+<- Send:                                                                                            
+   Return value: 0                                                                                  
+   Size of data buffer: 4                                                                           
+   Data buffer:                                                                                     
+   DATA: 69 6e 66 6f                                            "info"                              
+  
+-> Read: CMDstats#       
+CMDstats#                
+   Command: CMDstats     
+   Arg size: 0           
+<- Send:                 
+   Return value: 0       
+   Size of data buffer: 5
+   Data buffer:          
+   DATA: 73 74 61 74 73                                         "stats"                             
+
+-> Read: CMDauthentify#  
+CMDauthentify#           
+   Command: CMDauthentify
+   Arg size: 8           
+   Arg content: *wd      
+
+<- Send:                 
+   Return value: 0       
+   Size of data buffer: 0
+   Data buffer:          
+        ""               
+
+-> Read: CMDencrypt#     
+CMDencrypt#
+   Command: CMDencrypt
+   Arg size: 1
+   Arg content:
+<- Send:
+   Return value: 0
+   Size of data buffer: 0
+   Data buffer:
+        ""
+
+-> Read: CMDdecrypt#
+CMDdecrypt#
+   Command: CMDdecrypt
+   Arg size: 1
+   Arg content:
+<- Send:
+   Return value: 0
+   Size of data buffer: 0
+   Data buffer:
+        ""
+
+-> Read: CMDbye#
+CMDbye#
+   Command: CMDbye
+   Arg size: 0
+<- Send:
+   Return value: 0
+   Size of data buffer: 0
+   Data buffer:
+        ""
