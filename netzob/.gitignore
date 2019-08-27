@@ -30,7 +30,3 @@ lib/python*
 lib64
 *.log
 dist/
-.DS_Store
-venv*/
-REDOCS_Netzob/*
-
