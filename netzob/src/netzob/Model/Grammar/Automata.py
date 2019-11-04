@@ -41,7 +41,7 @@ from netzob.Model.Grammar.States.State import State
 from netzob.Inference.Grammar.AutomataFactories.OneStateAutomataFactory import OneStateAutomataFactory
 from netzob.Inference.Grammar.AutomataFactories.ChainedStatesAutomataFactory import ChainedStatesAutomataFactory
 from netzob.Inference.Grammar.AutomataFactories.PTAAutomataFactory import PTAAutomataFactory
-
+from netzob.Inference.Grammar.AutomataFactories.MyPTAAutomataFactory import MyPTAAutomataFactory
 
 @NetzobLogger
 class Automata(object):
@@ -341,7 +341,9 @@ class Automata(object):
         :rtype: a :class:`netzob.Model.Grammar.Automata.Automata`
 
         """
-        return PTAAutomataFactory.generate(abstractSessions, symbolList)
+        #return PTAAutomataFactory.generate(abstractSessions, symbolList)
+        return MyPTAAutomataFactory.generate(abstractSessions, symbolList)
+
 
     @property
     def initialState(self):
